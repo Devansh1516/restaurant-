@@ -1,0 +1,55 @@
+@charset "UTF-8";/* Header */
+.header {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo section */
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title {
+    color: #ff9800;
+    font-size: 24px;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;            /* 👈 Makes items in straight line */
+    gap: 30px;                /* 👈 Space between items */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ff9800;
+}
