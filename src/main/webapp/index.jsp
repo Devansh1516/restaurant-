@@ -9,22 +9,8 @@
 </head>
 
 <body>
+<jsp:include page="navbar.jsp" />
 
-<header class="navbar">
-
-   <div class="logo">
-    <img src="images/logo.jpeg" alt="Restaurant Logo">
-    <span class="logo-text">CHATKARA</span>
-</div>
-
-    <!-- Navigation -->
-    <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Reservation</a>
-        <a href="#">Store Location</a>
-        <a href="#">Login</a>
-    </nav>
-</header>
 <section class="hero">
     <h1>Welcome to Chatakra Veg Delight</h1>
     <p>Enjoy our food made with love!</p>
@@ -60,7 +46,7 @@
         <h3>And dine in</h3>
     </div>
 
-    <button class="reserve-btn">
+    <button class="reserve-btn" onclick="goToReservation()">
         Reserve Table
     </button>
 
@@ -111,8 +97,67 @@
     </div>
 
 </div>
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Useful Links -->
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Promo Codes</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="footer-section">
+            <h3>Payment Methods</h3>
+            <div class="payments">
+                <span>₹ Cash</span>
+                <span>MasterCard</span>
+                <span>G Pay</span>
+                <span>Paytm</span>
+                <span>Visa</span>
+                <span>UPI</span>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-section">
+            <h3>Address</h3>
+            <p>
+                📍 90 MG MARG, Aryan Restaurant,<br>
+                Mahatma Gandhi Marg, Hazratganj,<br>
+                Lucknow, Uttar Pradesh, 226001
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+            <h3>Contact & Connect</h3>
+            <p>📧 info@aryanrestaurants.com</p>
+            <p>📞 9348348348</p>
+
+            <div class="social">
+                <a href="#">🌐</a>
+                <a href="#">📸</a>
+            </div>
+        </div>
+
+        <!-- Admin Section -->
+        <div class="footer-section admin">
+            <h3>Admin</h3>
+            <a href="/admin/login" class="admin-btn">Admin Login</a>
+        </div>
+
+    </div>
+</footer>
 
 
 <script src="js/script.js"></script>
+<script src="js/register.js"></script>
 </body>
 </html>
