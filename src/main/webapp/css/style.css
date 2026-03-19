@@ -203,6 +203,7 @@ body{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:30px;
+    margin-bottom:50px;
 }
 
 /* cards */
@@ -223,4 +224,71 @@ body{
 .category-card p{
     margin-top:12px;
     font-size:16px;
+    margin-bottom:50px;
+}
+.footer {
+    background-color: #e85d04;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.payments span {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.social a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Admin Button */
+.admin-btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.admin-btn:hover {
+    background: white;
+    color: black;
 }
