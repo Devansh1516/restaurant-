@@ -17,7 +17,7 @@
 
     <!-- Navigation -->
     <nav class="nav-links">
-        <a href="#">Home</a>
+        <a href="index.jsp">Home</a>
         <a href="#">Reservation</a>
         <a href="#">Store Location</a>
     </nav>

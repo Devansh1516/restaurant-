@@ -11,5 +11,5 @@ public interface re_ser {
 	 input getInputById(int id);
 	 void updateinput(input obj);
 	 void deleteinput(int id);
-	
+	 List<input> findbynumber(int numb);
 }

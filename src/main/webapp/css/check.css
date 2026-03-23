@@ -1,0 +1,51 @@
+@charset "UTF-8";/* ===== CHECK RESERVATION PAGE ===== */
+
+.check-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2e7d32, #e8f5e9);
+}
+
+.check-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.check-form h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.check-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.check-form input:focus {
+    border-color: #2e7d32;
+}
+
+.check-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.check-form button:hover {
+    background: #e85d00;
+}
