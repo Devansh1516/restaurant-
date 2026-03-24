@@ -85,6 +85,13 @@ private Map<Integer,input> reservationcache=new ConcurrentHashMap<>();
 
 @Override
 public List<input> findbynumber(int numb) {
+	List<input> result= new ArrayList<>();
+	for(input obj:reservationcache.values()) {
+		if(obj.getNumber()==numb) {
+			result.add(obj);
+		}
+	}
+	
 	// TODO Auto-generated method stub
 	return null;
 }
