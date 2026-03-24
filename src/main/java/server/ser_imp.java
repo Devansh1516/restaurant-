@@ -93,7 +93,7 @@ public List<input> findbynumber(int numb) {
 	}
 	
 	// TODO Auto-generated method stub
-	return null;
+	return result;
 }
 
 	
