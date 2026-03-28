@@ -11,11 +11,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import dao.res_dao;
+import dao.res_imp;
 import hiber.input;
 import server.ser_imp;
 
 @RestController
 public class cont {
+	private res_dao dao;
 	@Autowired
  private ser_imp service;
 	@PostMapping("/reserve")
@@ -26,7 +29,7 @@ public class cont {
 	@GetMapping("/pending")
 	@ResponseBody
 	public List<input>getPendingReservation(){
-		return service.getAllInputs();
+		return dao.getpending() ;
 		
 	}
 	@GetMapping("/approve")
@@ -41,5 +44,7 @@ public class cont {
 		return "adminDashboard";
 	}
 	
+ 
+		 
 }
 
