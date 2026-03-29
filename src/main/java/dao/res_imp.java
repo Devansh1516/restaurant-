@@ -84,14 +84,4 @@ public class res_imp implements res_dao {
 	
 		return list;
 	}
-
-public List<input> getpending(){
-	Session session=factory.openSession();
-	List<input>list=session
-			.createQuery("from input where sta=:status",input.class)
-			.setParameter("status", reservation_sta.PENDING)
-			.getResultList();
-	session.close();
-	return list;
-}
 }

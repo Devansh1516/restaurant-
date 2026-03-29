@@ -12,4 +12,5 @@ public interface re_ser {
 	 void updateinput(input obj);
 	 void deleteinput(int id);
 	 List<input> findbynumber(int numb);
+	 List<input>getpending();
 }

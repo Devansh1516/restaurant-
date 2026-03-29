@@ -29,7 +29,7 @@ public class cont {
 	@GetMapping("/pending")
 	@ResponseBody
 	public List<input>getPendingReservation(){
-		return dao.getpending() ;
+		return service.getpending() ;
 		
 	}
 	@GetMapping("/approve")

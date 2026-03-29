@@ -21,6 +21,7 @@ public class input {
 	public void setId(int id) {
 		this.id = id;
 	}
+	private int tempid;
 	private String name;
 	private int people;
 	private int number;
@@ -92,6 +93,16 @@ public class input {
 	                ", time=" + ti +
 	                ", status=" + sta + "]";
 	    }
+	 public int getTempid() {
+		 return tempid;
+	 }
+	 public void setTempid(int tempid) {
+		 this.tempid = tempid;
+	 }
+	 public input(int tempid) {
+		super();
+		this.tempid = tempid;
+	 }
 	
 	
 	
