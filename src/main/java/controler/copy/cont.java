@@ -33,14 +33,14 @@ public class cont {
 		
 	}
 	@GetMapping("/approve")
-	public String approve(@RequestParam int id)
+	public String approve(@RequestParam int tempid)
 	{
-		service.approveResevation(id);
+		service.approveResevation(tempid);
 		return "adminDashboard";
 	}
 	@GetMapping("/reject")
-	public String reject(@RequestParam int id) {
-		service.rejectReservation(id);
+	public String reject(@RequestParam int tempid) {
+		service.rejectReservation(tempid);
 		return "adminDashboard";
 	}
 	

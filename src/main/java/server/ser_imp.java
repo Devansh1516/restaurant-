@@ -18,8 +18,8 @@ import hiber.reservation_sta;
 
 @Service
 public class ser_imp implements re_ser {
-	
-	private List<input> pendingCache=new ArrayList<>();
+	private Map<Integer, input> pendingCache=new ConcurrentHashMap<>();
+	private AtomicInteger count=new AtomicInteger();
 	
 
 	private res_dao dao;
@@ -31,8 +31,10 @@ public class ser_imp implements re_ser {
 	@Override
 	public void save(input obj ) {
 		if(obj.getPeople()<=8) {
+			int tempid=count.getAndIncrement();
+			obj.setTempId(tempid);
 			obj.setStatus(reservation_sta.PENDING);
-			pendingCache.add(obj);
+			pendingCache.put(tempid,obj);
 		}
 		else {
 			System.out.println("comvert it to the party ");
@@ -64,23 +66,24 @@ public class ser_imp implements re_ser {
 		// TODO Auto-generated method stub
 		
 	}
-	public void approveResevation(int id) {
-		input obj=dao.getInputById(id);
+	public void approveResevation( int tempid) {
+	
+		input obj=pendingCache.get(tempid);
 		
 			if(obj!=null) {
 				obj.setStatus(reservation_sta.APPROVED);
 				dao.save(obj);
-				pendingCache.remove(id);
+				pendingCache.remove(tempid);
 				
 				
 		}
 		
 	}
-	public void rejectReservation(int id) {
-		input obj=dao.getInputById(id);
+	public void rejectReservation(int tempid) {
+		input obj=pendingCache.get(tempid);
 		if(obj!=null) {
 			obj.setStatus(reservation_sta.REJECTED);
-			pendingCache.remove(id);
+			pendingCache.remove(tempid);
 			dao.save(obj);
 			
 		}
@@ -93,7 +96,7 @@ public List<input> findbynumber(int numb) {
 		}	
 @Override
 public List<input> getpending(){
-	return pendingCache;
+	return new ArrayList<>(pendingCache.values());
 }
 }
 

@@ -10,6 +10,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 @Entity
 public class input {
 	@Id
@@ -21,6 +22,7 @@ public class input {
 	public void setId(int id) {
 		this.id = id;
 	}
+	@Transient
 	private int tempid;
 	private String name;
 	private int people;
@@ -96,13 +98,10 @@ public class input {
 	 public int getTempid() {
 		 return tempid;
 	 }
-	 public void setTempid(int tempid) {
-		 this.tempid = tempid;
-	 }
-	 public input(int tempid) {
-		super();
-		this.tempid = tempid;
-	 }
+	
+	 public void setTempId(int tempId) {
+		    this.tempid = tempId;
+		}
 	
 	
 	
