@@ -13,14 +13,15 @@
 
 <div class="reservation-container">
 
-    <form class="reservation-form">
+    <form class="reservation-form" onsubmit="submitForm(event)">
         <h2>Reserve Your Table</h2>
 
         <!-- Name -->
-        <input type="text" placeholder="Full Name" required>
+        <input type="text" id="name" placeholder="Full Name" required>
+        
 
         <!-- Number of People -->
-        <select required>
+        <select  id="people" required>
             <option value="">Select People</option>
             <option>1</option>
             <option>2</option>
@@ -33,13 +34,13 @@
         </select>
 
         <!-- Phone -->
-        <input type="tel" placeholder="Phone Number" required>
+        <input type="tel" id="number" placeholder="Phone Number" required>
 
         <!-- Date -->
-        <input type="date" required>
+        <input type="date" id="date" required>
 
         <!-- Time -->
-        <select required>
+        <select id ="time" required>
     <option value="">Select Time Slot</option>
     <option>4:00 PM</option>
     <option>5:00 PM</option>
@@ -59,6 +60,6 @@
     </form>
 
 </div>
-
+<script src="js/register.js"></script>
 </body>
 </html>
