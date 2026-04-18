@@ -1,5 +1,5 @@
 function goToReservation() {
-    window.location.href = "register.jsp";
+    window.location.href = "/register";
 }
 function submitForm(event) {
 
@@ -26,7 +26,7 @@ function submitForm(event) {
     .then(res => res.text())
     .then(() => {
         alert("Reservation Successful!");
-        window.location.href = "status.jsp";
+        window.location.href = "/index";
     });
 }
 function convertTo24Hour(time12h) {

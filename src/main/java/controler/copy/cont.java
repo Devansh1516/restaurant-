@@ -36,7 +36,7 @@ public class cont {
 	public String approve(@RequestParam int tempid)
 	{
 		service.approveResevation(tempid);
-		return "adminDashboard";
+		return "adminstatus";
 	}
 	@GetMapping("/reject")
 	public String reject(@RequestParam int tempid) {
@@ -44,7 +44,5 @@ public class cont {
 		return "adminDashboard";
 	}
 	
- 
-		 
 }
 

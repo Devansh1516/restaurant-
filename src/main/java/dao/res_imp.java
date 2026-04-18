@@ -45,13 +45,23 @@ public class res_imp implements res_dao {
 
 	@Override
 	public input getInputById(int id) {
+		
 		// TODO Auto-generated method stub
-		return null;
+		 Session session = factory.openSession();
+		    input obj = session.get(input.class, id);
+		    session.close();
+		    return obj;
 	}
 
 	@Override
 	public void updateinput(input obj) {
-		// TODO Auto-generated method stub
+		 Session session = factory.openSession();
+	    Transaction tx = session.beginTransaction();
+
+	    session.update(obj);
+
+	    tx.commit();
+	    session.close();
 		
 	}
 
