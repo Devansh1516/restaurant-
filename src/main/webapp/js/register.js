@@ -26,7 +26,7 @@ function submitForm(event) {
     .then(res => res.text())
     .then(() => {
         alert("Reservation Successful!");
-        window.location.href = "/index";
+        window.location.href = "/home";
     });
 }
 function convertTo24Hour(time12h) {

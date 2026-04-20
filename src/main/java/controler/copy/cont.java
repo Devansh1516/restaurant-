@@ -3,6 +3,7 @@ package controler.copy;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,7 @@ import dao.res_imp;
 import hiber.input;
 import server.ser_imp;
 
-@RestController
+@Controller
 public class cont {
 	private res_dao dao;
 	@Autowired
@@ -36,12 +37,12 @@ public class cont {
 	public String approve(@RequestParam int tempid)
 	{
 		service.approveResevation(tempid);
-		return "adminstatus";
+		return "redirect:/admin";
 	}
 	@GetMapping("/reject")
 	public String reject(@RequestParam int tempid) {
 		service.rejectReservation(tempid);
-		return "adminDashboard";
+		return "redirect:/admin";
 	}
 	
 }
