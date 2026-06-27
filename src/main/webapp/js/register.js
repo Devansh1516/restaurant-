@@ -1,6 +1,4 @@
-function goToReservation() {
-    window.location.href = "/register";
-}
+
 function submitForm(event) {
 
     event.preventDefault();
@@ -26,7 +24,7 @@ function submitForm(event) {
     .then(res => res.text())
     .then(() => {
         alert("Reservation Successful!");
-        window.location.href = "/home";
+       window.location.href = "/EmployeeManagementSystem/home";
     });
 }
 function convertTo24Hour(time12h) {

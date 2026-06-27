@@ -17,9 +17,9 @@
 
     <!-- Navigation -->
     <nav class="nav-links">
-        <a href="index.jsp">Home</a>
+        <a href="${pageContext.request.contextPath}/">Home</a>
         <a href="#">Reservation</a>
-        <a href="#">Store Location</a>
+        <a href="${pageContext.request.contextPath}/location">Store Location</a>
     </nav>
 </header>
 

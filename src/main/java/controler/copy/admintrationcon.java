@@ -36,6 +36,11 @@ public class admintrationcon {
 	public String check() {
 	    return "check";
 	}
-		 
+	@GetMapping("/location")
+	public String location() {
+
+	    return "map";
+
+	} 
 }
 

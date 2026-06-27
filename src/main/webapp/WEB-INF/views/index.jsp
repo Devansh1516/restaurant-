@@ -46,9 +46,9 @@
         <h3>And dine in</h3>
     </div>
 
-    <button class="reserve-btn" onclick="goToReservation()">
-        Reserve Table
-    </button>
+    <a href="${pageContext.request.contextPath}/register" class="reserve-btn">
+    Reserve Table
+</a>
 
 </section>
 
