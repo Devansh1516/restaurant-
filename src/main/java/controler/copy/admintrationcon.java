@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import hiber.input;
 import server.ser_imp;
@@ -42,5 +43,33 @@ public class admintrationcon {
 	    return "map";
 
 	} 
+	@GetMapping("all")
+	public String adminall(Model mo) {
+		List<input> list = service.getAllInputs();
+
+		
+		mo.addAttribute("list", list);
+
+		return "adminall";
+		
+	}
+	@GetMapping("/delete")
+	public String delete(@RequestParam int id){
+
+	    service.deleteinput(id);
+
+	    return "adminall";
+}
+	@GetMapping("/update")
+public String updatePage(@RequestParam int id, Model model){
+
+    input obj = service.getInputById(id);
+
+    model.addAttribute("reservation", obj);
+
+    return "update";
+
+}
+	
 }
 

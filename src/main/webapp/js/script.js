@@ -33,4 +33,5 @@ setInterval(()=>{
 
     showSlide(index);
 
-},2000);
+},5000);
+

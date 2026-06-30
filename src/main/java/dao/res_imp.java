@@ -67,9 +67,24 @@ public class res_imp implements res_dao {
 
 	@Override
 	public void deleteinput(int id) {
+		  Session session = factory.openSession();
+
+		    Transaction tx = session.beginTransaction();
+
+		    input obj = session.get(input.class, id);
+
+		    if(obj != null){
+
+		        session.delete(obj);
+
+		    }
+
+		    tx.commit();
+
+		    session.close();
+		}
 		// TODO Auto-generated method stub
 		
-	}
 
 	@Override
 	public List<input> findbynumber(int numb) {

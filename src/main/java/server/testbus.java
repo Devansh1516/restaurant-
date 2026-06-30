@@ -9,7 +9,6 @@ public class testbus {
     public static void main(String[] args) {
 res_dao dao=new res_imp();
 ser_imp service=new ser_imp(dao);
-input hi=new input();
     input r1=new input();
     r1.setId(1);
     r1.setName("devansh");

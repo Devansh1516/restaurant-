@@ -57,12 +57,14 @@ public class ser_imp implements re_ser {
 
 	@Override
 	public void updateinput(input obj) {
+		dao.updateinput(obj);
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void deleteinput(int id) {
+		dao.deleteinput(id);
 		// TODO Auto-generated method stub
 		
 	}
@@ -97,6 +99,9 @@ public List<input> findbynumber(int numb) {
 @Override
 public List<input> getpending(){
 	return new ArrayList<>(pendingCache.values());
+}
+public List<input> getAllInputs1(){
+	return dao.getAllInputs();
 }
 }
 

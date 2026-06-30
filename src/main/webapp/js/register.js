@@ -14,7 +14,7 @@ function submitForm(event) {
     };
 	console.log(data);
 
-    fetch("http://localhost:8080/reserve", {
+    fetch("/EmployeeManagementSystem/reserve", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

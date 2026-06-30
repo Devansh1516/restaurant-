@@ -18,18 +18,21 @@
 <section class="offer-slider">
 
     <div class="slide active">
+    <img src="images/welcome page .png">
         <h1>Welcome to Chatakra Veg Delight</h1>
         <p>Enjoy our food made with love</p>
+         
     </div>
-
-    <div class="slide">
+<div class="slide second-slide">
         <h1>Flat ₹175 OFF</h1>
         <p>Use Code: WELCOME175</p>
+         <img src="images/welcome.png">
     </div>
 
     <div class="slide">
         <h1>Fresh Pure Veg Meals</h1>
         <p>Taste the real Indian flavours</p>
+         <img src="images/wel.png">
     </div>
  <!-- dots -->
     <div class="dots">
@@ -55,45 +58,45 @@
 <div class="category-grid">
 
     <div class="category-card">
-        <img src="images/chinese.jpg">
-        <p>Chinese Starter Non-Veg</p>
+        <img src="images/pasta.png">
+        <p>Pasta</p>
     </div>
 
     <div class="category-card">
-        <img src="images/soup.jpg">
-        <p>Veg Soups</p>
+        <img src="images/fired momos.png">
+        <p>Fried Momos</p>
     </div>
 
     <div class="category-card">
-        <img src="images/rice.jpg">
-        <p>Veg Rice</p>
+        <img src="images/sand.png">
+        <p>Sandwich</p>
     </div>
 
     <div class="category-card">
-        <img src="images/veggie.jpg">
-        <p>Veggie Delight</p>
+        <img src="images/chola.png">
+        <p>Chola</p>
     </div>
 
     <!-- second row -->
 
     <div class="category-card">
-        <img src="images/friedrice.jpg">
-        <p>Fried Rice</p>
+        <img src="images/aaluu.png">
+        <p>Aallu Paratha</p>
     </div>
 
     <div class="category-card">
-        <img src="images/roll.jpg">
-        <p>Veg Rolls</p>
+        <img src="images/rajma .png">
+        <p>Rajma Chawal</p>
     </div>
 
     <div class="category-card">
-        <img src="images/noodles.jpg">
+        <img src="images/noodles.png">
         <p>Veg Noodles</p>
     </div>
 
     <div class="category-card">
-        <img src="images/thali.jpg">
-        <p>Veg Thali</p>
+        <img src="images/coffee.png">
+        <p>Coffee</p>
     </div>
 
 </div>
@@ -104,55 +107,37 @@
         <div class="footer-section">
             <h3>Useful Links</h3>
             <ul>
-                <li><a href="#">Shipping Policy</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Promo Codes</a></li>
-                <li><a href="#">Refund Policy</a></li>
+                <li><a href='#'>about us</a></li>
             </ul>
         </div>
 
-        <!-- Payment Methods -->
-        <div class="footer-section">
-            <h3>Payment Methods</h3>
-            <div class="payments">
-                <span>₹ Cash</span>
-                <span>MasterCard</span>
-                <span>G Pay</span>
-                <span>Paytm</span>
-                <span>Visa</span>
-                <span>UPI</span>
-            </div>
-        </div>
+        
 
         <!-- Address -->
         <div class="footer-section">
             <h3>Address</h3>
             <p>
-                📍 90 MG MARG, Aryan Restaurant,<br>
-                Mahatma Gandhi Marg, Hazratganj,<br>
-                Lucknow, Uttar Pradesh, 226001
+             7/16, <br> 
+           opposite Delhi Public School, Sector 7, Jankipuram,<br>
+            Lucknow, Uttar Pradesh 226021
             </p>
         </div>
 
         <!-- Contact -->
         <div class="footer-section">
             <h3>Contact & Connect</h3>
-            <p>📧 info@aryanrestaurants.com</p>
-            <p>📞 9348348348</p>
+            <p> email- chakara69@gmail.com</p>
+            <p>phone- 9125031713</p>
 
             <div class="social">
-                <a href="#">🌐</a>
-                <a href="#">📸</a>
+                <a href="#"></a>
+                <a href="#"></a>
             </div>
         </div>
 
-        <!-- Admin Section -->
-        <div class="footer-section admin">
-            <h3>Admin</h3>
-            <a href="/admin/login" class="admin-btn">Admin Login</a>
-        </div>
-
+      
     </div>
 </footer>
 

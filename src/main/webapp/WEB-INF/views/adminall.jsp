@@ -4,16 +4,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Dashboard</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="css/admin.css">
 </head>
 
 <body>
 
 
+
 <div class="container">
 
-    <h1>Admin Dashboard</h1>
+
+    <h1>All the member</h1>
 
     <table border="1">
         <tr>
@@ -40,12 +42,16 @@
                 </td>
 
                 <td>
-                    <a href="approve?tempid=${res.tempid}" class="btn approve">Approve</a>
-                    <a href="reject?tempid=${res.tempid}" class="btn reject">Reject</a>
+                    <a href="approve?tempid=${res.tempid}" class="btn approve">update</a>
+                   <a href="${pageContext.request.contextPath}/delete?id=${res.id}"
+   onclick="return confirm('Delete this reservation?')"
+   class="btn reject">
+    Delete
+</a>
                 </td>
             </tr>
         </c:forEach>
-
+      
     </table>
 
 </div>
