@@ -58,7 +58,7 @@ public class admintrationcon {
 
 	    service.deleteinput(id);
 
-	    return "adminall";
+	    return "redirect:/all";
 }
 	@GetMapping("/update")
 public String updatePage(@RequestParam int id, Model model){

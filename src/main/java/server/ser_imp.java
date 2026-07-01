@@ -93,7 +93,7 @@ public class ser_imp implements re_ser {
 
 
 @Override
-public List<input> findbynumber(int numb) {
+public List<input> findbynumber(long numb) {
 			return dao.findbynumber(numb);
 		}	
 @Override

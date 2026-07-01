@@ -26,7 +26,7 @@ public class input {
 	private int tempid;
 	private String name;
 	private int people;
-	private int number;
+	private long number;
 	private LocalDate resevation;
 	private LocalTime ti;
 	@Enumerated(EnumType.STRING)
@@ -43,10 +43,10 @@ public class input {
 	public void setPeople(int people) {
 		this.people = people;
 	}
-	public int getNumber() {
+	public long getNumber() {
 		return number;
 	}
-	public void setNumber(int number) {
+	public void setNumber(long number) {
 		this.number = number;
 	}
 	public LocalDate getResevation() {
@@ -61,7 +61,7 @@ public class input {
 	public void setTi(LocalTime ti) {
 		this.ti = ti;
 	}
-	public input( int id,String name, int people, int number, LocalDate resevation, LocalTime ti) {
+	public input( int id,String name, int people, long number, LocalDate resevation, LocalTime ti) {
 		super();
 		this.id=id;
 		this.name = name;

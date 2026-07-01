@@ -10,7 +10,7 @@ public interface res_dao {
 	 input getInputById(int id);
 	 void updateinput(input obj);
 	 void deleteinput(int id);
-	 List<input> findbynumber(int numb);
+	 List<input> findbynumber(long numb);
 	
 	List<input> reject();
 	List<input> accept();

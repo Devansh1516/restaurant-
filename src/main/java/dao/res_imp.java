@@ -88,7 +88,7 @@ public  class res_imp implements res_dao {
 		
 
 	@Override
-	public List<input> findbynumber(int numb) {
+	public List<input> findbynumber(long numb) {
 		List<input> list = new ArrayList<>();
 		try {
 			Session session =new Configuration()
