@@ -14,7 +14,13 @@
 <div class="container">
 
     <h1>Admin Dashboard</h1>
-
+    
+ <div class="option-area">
+    <select onchange="changePage(this.value)">
+        <option value="admin" selected>Pending Reservations</option>
+        <option value="all">All Reservations</option>
+    </select>
+</div>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -49,6 +55,6 @@
     </table>
 
 </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -34,4 +34,12 @@ setInterval(()=>{
     showSlide(index);
 
 },5000);
+function changePage(page) {
 
+    if (page === "all") {
+        window.location.href = "/EmployeeManagementSystem/all";
+    } else if (page === "admin") {
+        window.location.href = "/EmployeeManagementSystem/admin";
+    }
+
+}

@@ -16,6 +16,14 @@
 
 
     <h1>All the member</h1>
+    
+
+  <div class="option-area">
+    <select onchange="changePage(this.value)">
+        <option value="all" selected>All Reservations</option>
+        <option value="admin">Pending Reservations</option>
+    </select>
+</div>
 
     <table border="1">
         <tr>
@@ -55,6 +63,6 @@
     </table>
 
 </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>
