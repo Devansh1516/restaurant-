@@ -43,3 +43,16 @@ function changePage(page) {
     }
 
 }
+function changeStatus(value){
+
+    if(value == "all"){
+        window.location.href = "/EmployeeManagementSystem/all";
+    }
+    else if(value == "approved"){
+        window.location.href = "/EmployeeManagementSystem/approved";
+    }
+    else if(value == "rejected"){
+        window.location.href = "/EmployeeManagementSystem/rejected";
+    }
+
+}

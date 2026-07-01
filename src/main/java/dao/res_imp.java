@@ -9,12 +9,13 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
 import hiber.input;
 import hiber.reservation_sta;
 @Repository
-public class res_imp implements res_dao {
+public  class res_imp implements res_dao {
 	
 	private static final SessionFactory factory=new Configuration()
 			.configure("xml/hibernate.cfg.xml")
@@ -108,5 +109,38 @@ public class res_imp implements res_dao {
 		}
 	
 		return list;
+	}
+	@Override
+	public List<input>accept(){
+		 Session session = factory.openSession();
+
+		    Query<input> query = session.createQuery(
+		            "from input where sta=:status", input.class);
+
+		    query.setParameter("status", reservation_sta.APPROVED);
+
+		    List<input> list = query.getResultList();
+
+		    session.close();
+
+		    return list;
+		
+		
+	}
+	@Override
+	public List<input> reject() {
+
+	    Session session = factory.openSession();
+
+	    Query<input> query = session.createQuery(
+	            "from input where sta=:status", input.class);
+
+	    query.setParameter("status", reservation_sta.REJECTED);
+
+	    List<input> list = query.getResultList();
+
+	    session.close();
+
+	    return list;
 	}
 }

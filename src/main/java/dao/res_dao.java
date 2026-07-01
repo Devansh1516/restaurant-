@@ -12,5 +12,7 @@ public interface res_dao {
 	 void deleteinput(int id);
 	 List<input> findbynumber(int numb);
 	
+	List<input> reject();
+	List<input> accept();
 
 }

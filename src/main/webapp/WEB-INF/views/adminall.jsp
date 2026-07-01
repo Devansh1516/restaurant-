@@ -24,6 +24,14 @@
         <option value="admin">Pending Reservations</option>
     </select>
 </div>
+<select onchange="changeStatus(this.value)">
+
+    <option value="al"> Reservations</option>
+   <option value="all">All Reservations</option>
+    <option value="approved">Approved</option>
+    <option value="rejected">Rejected</option>
+
+</select>
 
     <table border="1">
         <tr>

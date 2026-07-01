@@ -103,6 +103,18 @@ public List<input> getpending(){
 public List<input> getAllInputs1(){
 	return dao.getAllInputs();
 }
+@Override
+public List<input> accept() {
+
+    return dao.accept();
+
+}
+@Override
+public List<input> reject() {
+
+    return dao.reject();
+
+}
 }
 
 

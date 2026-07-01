@@ -70,6 +70,26 @@ public String updatePage(@RequestParam int id, Model model){
     return "update";
 
 }
+	@GetMapping("/approved")
+	public String approved(Model mo){
+
+	    List<input> list = service.accept();
+
+	    mo.addAttribute("list", list);
+
+	    return "adminall";
+
+	}
+	@GetMapping("/rejected")
+	public String rejected(Model mo){
+
+	    List<input> list = service.reject();
+
+	    mo.addAttribute("list", list);
+
+	    return "adminall";
+
+	}
 	
 }
 

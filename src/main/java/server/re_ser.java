@@ -13,4 +13,7 @@ public interface re_ser {
 	 void deleteinput(int id);
 	 List<input> findbynumber(int numb);
 	 List<input>getpending();
+	 List<input> accept();
+
+	 List<input> reject();
 }
